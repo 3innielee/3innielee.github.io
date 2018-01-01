@@ -1,3 +1,6 @@
 theme: jekyll-theme-minimal
-title: 3innie's website
+name: 3innie's website
+description: Chronicles of my advanture in coding and open source.
 highlighter: rouge
+url: https://3innielee.github.io/
+
