@@ -4,3 +4,4 @@ description: Chronicles of my advanture in coding and open source.
 highlighter: rouge
 url: https://3innielee.github.io/
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
