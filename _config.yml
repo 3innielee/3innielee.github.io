@@ -5,3 +5,5 @@ highlighter: rouge
 url: https://3innielee.github.io/
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+plugins:
+  - jekyll-sitemap
