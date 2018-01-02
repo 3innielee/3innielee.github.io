@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>So I guess I finally build my personal site.</p>
+---
+layout: default
+title: 3innielee
+---
+<div class="blurb">
+	<h1>Hi there, I'm Hank Quinlan!</h1>
+	<p>So I <em>guess</em> I finally build my personal site. <a href="/about">Read more about my life...</a></p>
+</div>
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
-</body>
-</html>
+<!-- /.blurb -->
