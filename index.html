@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    .container {
-    	background: blue;
-		}
+
 		</style>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -16,11 +14,11 @@
     <meta name="description" content="Winnie Lee is a software engineer focusing on AI applications and data science. This personal website lists Winnie's ongoing and past projects and experiences.">
 
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
   	<header>
 		  <!--Navigation bar-->
-	    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
-	      <div class="container-fluid">
+	    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
+	      <div class="container border-bottom">
 	        <a class="navbar-brand" href="#">Winnie Lee</a>
 	        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaritems" >
 	          <span class="navbar-toggler-icon"></span>
@@ -29,13 +27,13 @@
 	        <div id="navbaritems" class="collapse navbar-collapse">
 	          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 	            <li class="nav-item">
-	              <a class="nav-link active" href="#">Me</a>
+	              <a class="nav-link active" href="#section_me">Me</a>
 	            </li>
 	            <li class="nav-item">
-	              <a class="nav-link" href="#">Projects</a>
+	              <a class="nav-link" href="#section_projects">Projects</a>
 	            </li>
 	           	<li class="nav-item">
-	              <a class="nav-link" href="#">Experiences</a>
+	              <a class="nav-link" href="#section_experiences">Experiences</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -45,7 +43,7 @@
     
 	  <!--page content-->
     <main class="container">
-    	<div class="row">
+    	<div class="row" id="section_me">
 	      <div class="bg-light p-5 rounded">
 	        <div class="col-sm-8 mx-auto">
 	          <h1>Me</h1>
@@ -54,7 +52,7 @@
 	        </div>
 	      </div>
     	</div>
-    	<div class="row">
+    	<div class="row" id="section_projects">
 	      <div class="bg-light p-5 rounded">
 	        <div class="col-sm-8 mx-auto">
 	          <h1>Projects</h1>
@@ -63,7 +61,7 @@
 	        </div>
 	      </div>
     	</div>
-    	<div class="row">
+    	<div class="row" id="section_experiences">
 	      <div class="bg-light p-5 rounded">
 	        <div class="col-sm-8 mx-auto">
 	          <h1>Experiences</h1>
