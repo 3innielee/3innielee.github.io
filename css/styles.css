@@ -175,3 +175,8 @@
   --bs-form-invalid-border-color: #ea868f;
 }
 
+#home img{
+  background-color: transparent;
+  width:55%;
+}
+
