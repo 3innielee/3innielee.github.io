@@ -10,16 +10,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,light_mode" />
   <!-- Customized CSS -->
   <link href="css/styles.css" rel="stylesheet" />
-  <style>
-    body { font-family: Arial, sans-serif; transition: background 0.3s, color 0.3s; }
-    .hero { height: 60vh; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
-    .project-card { transition: transform 0.3s; }
-    .project-card:hover { transform: scale(1.05); }
-  </style>
 </head>
 <body>
     
-  <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">3innielee</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -111,8 +105,6 @@
   <script>
     const switchSoundOn = new Audio('assets/sounds/switch-on.mp3');
     const switchSoundOff = new Audio('assets/sounds/switch-off.mp3');
-    
-    const navBar=document.getElementById('navbar');
 
     document.getElementById('theme-toggle').addEventListener('click', function() {
       if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
@@ -120,13 +112,11 @@
         switchSoundOn.play();
         this.textContent = 'dark_mode';
         this.setAttribute('data-bs-theme-value','dark');
-        navBar.style.backgroundColor ="#F7EBF1";
       }else {
         document.documentElement.setAttribute('data-bs-theme','dark')
         switchSoundOff.play();
         this.textContent = 'light_mode';
         this.setAttribute('data-bs-theme-value','light');
-        navBar.style.backgroundColor ="#241E23";
       }
     });
   </script>
