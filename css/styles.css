@@ -64,4 +64,6 @@
 body { font-family: Arial, sans-serif; transition: background 0.3s, color 0.3s; }
 .hero { height: 60vh; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
 .project-card { transition: transform 0.3s; }
-.project-card:hover { transform: scale(1.05); }
+.project-card:hover { transform: scale(1.05);} 
+.card-footer { border-top:0px; }
+
